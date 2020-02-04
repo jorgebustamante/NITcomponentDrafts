@@ -56,7 +56,7 @@ function Header(href) {
         </div>
       </header>
       <div
-        className={`${isActive} absolute bg-gray-800 h-screen w-1/2 flex flex-col right-0 md:hidden lg:hidden`}
+        className={`${isActive} fixed bg-gray-800 h-screen w-1/2 flex flex-col right-0 md:hidden lg:hidden`}
         id='SideMenu'
       >
         <ul className='flex-col mt-16'>
