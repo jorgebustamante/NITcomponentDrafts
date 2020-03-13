@@ -5,15 +5,15 @@ import { AiFillTwitterCircle } from 'react-icons/ai';
 const HomePage = () => {
   return (
     <>
-      <div className='flex flex-col lg:flex-row items-center justify-center px-16 py-16 bg-gray-200'>
-        <h2 className=' my-8 text-5xl lg:text-6xl text-gray-800 leading-tight'>
+      <div className='flex flex-col lg:flex-row items-center justify-center px-8 md:px-16 py-16 bg-gray-200'>
+        <h2 className='md:my-8 text-5xl lg:text-6xl text-gray-800 text-center md:text-left leading-tight'>
           Supporting software developers serving Native communities{' '}
         </h2>
         <img src='computer.svg' className='w-64 lg:w-1/4' />
       </div>
 
-      <div className='flex flex-col md:flex-row bg-white px-16 leading-relaxed text-gray-800'>
-        <div className='lg:w-1/2 md:w-3/4 w-10/12'>
+      <div className='flex flex-col md:flex-row bg-white px-8 md:px-16 leading-relaxed text-gray-800'>
+        <div className='lg:w-1/2 md:w-3/4 w-full'>
           <h2 className='font-bold mb-3 text-4xl text-gray-800'>
             <TypingText />
           </h2>
@@ -38,9 +38,9 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className='flex flex-col mx-auto bg-gray-200 px-16 py-16 text-gray-800'>
-        <p className='text-6xl mx-auto py-8 text-bold'>Connect with us!</p>
-        <div className='flex flex-row py-8 justify-around w-7/12 mx-auto text-teal-500'>
+      <div className='flex flex-col mx-auto bg-gray-200 px-8 md:px-16 py-16 text-gray-800'>
+        <p className='text-6xl mx-auto py-8 text-bold text-center'>Connect with us!</p>
+        <div className='flex flex-row py-8 justify-around w-full md:w-7/12 mx-auto text-teal-500'>
           <FaSlackHash className='h-24 w-24' />{' '}
           <FaDiscourse className='h-24 w-24' />{' '}
           <FaGithub className='h-24 w-24' />{' '}
@@ -50,7 +50,7 @@ const HomePage = () => {
       </div>
 
     {/* No logic in place yet for contact form */}
-      <div className='flex flex-col bg-white px-16 py-16'>
+      <div className='flex flex-col bg-white px-8 md:px-16 py-16'>
       <div className='bg-white max-w-xl rounded '>
       <h1 className='text-4xl font-bold mb-4 text-gray-800'>
       Ask a question or leave a comment 💬

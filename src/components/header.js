@@ -7,8 +7,8 @@ function Header(href) {
   const router = useRouter();
   return (
     <>
-      <header className='bg-white shadow-xl m-0'>
-        <div className='flex flex-wrap md:flex-no-wrap items-center justify-between max-w-full m-0 px-4 py-6 md:px-8 '>
+      <header className='bg-white shadow-xl'>
+        <div className='flex flex-wrap md:flex-no-wrap items-center justify-between max-w-full py-6 mx-8 md:mx-16 '>
           <div className='flex items-center'>
             <Link href='/'>
               <a>
@@ -24,6 +24,7 @@ function Header(href) {
           <div className='block md:hidden flex'>
             <HamburgerSqueeze
               className='z-10'
+              buttonStyle={{ padding: '0' }}
               isActive={isActive}
               onClick={() => toggleButton(!isActive)}
               barColor={!isActive ? '#2D3748' : '#FFFFFF'}
